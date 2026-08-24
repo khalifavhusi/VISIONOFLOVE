@@ -1,0 +1,24 @@
+
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;font-family:Arial,Helvetica,sans-serif;background:#f8faf7;color:#183c2c}
+body{min-height:100vh;display:flex;flex-direction:column}
+.header{height:140px;background:#fff;display:flex;align-items:center;padding:0 52px;border-bottom:1px solid #e7ece5}
+.logo{width:265px;height:auto;display:block}
+.hero{height:380px;background:linear-gradient(90deg,rgba(10,27,16,.94),rgba(10,27,16,.55)),url("https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1800&q=80") center/cover;display:flex;align-items:center;padding:40px 9%}
+.hero h1{margin:0;color:#fff;font-size:48px;line-height:1.12;max-width:620px}
+.hero h1 span{color:#7cc28e}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:34px;padding:40px 8%;flex:1}
+.card{background:#fff;border:1px solid #e4e9e3;border-radius:22px;min-height:240px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;box-shadow:0 3px 12px rgba(0,0,0,.04);cursor:pointer;transition:.2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 10px 24px rgba(0,0,0,.09)}
+.icon{width:86px;height:86px;border-radius:50%;background:#edf4e8;display:flex;align-items:center;justify-content:center;font-size:43px;margin-bottom:18px}
+.card h2{margin:0 0 10px;font-size:27px;color:#173a2b}
+.card p{margin:0;max-width:190px;font-size:17px;line-height:1.45;color:#27352e}
+.footer{height:100px;background:#176039;display:flex;align-items:center;justify-content:center}
+.logout{border:1px solid #fff;border-radius:28px;background:transparent;color:#fff;padding:13px 30px;font-size:20px;cursor:pointer}
+.logout:hover{background:#fff;color:#176039}
+.page{min-height:100vh;display:flex;flex-direction:column}
+.page-main{flex:1;display:flex;align-items:center;justify-content:center}
+.page-logo{width:min(520px,70vw);height:auto}
+.page-footer{height:100px;background:#176039;display:flex;align-items:center;justify-content:center}
+@media(max-width:900px){.cards{grid-template-columns:repeat(2,1fr)}.hero h1{font-size:38px}}
+@media(max-width:600px){.header{height:105px;padding:0 22px}.logo{width:220px}.hero{height:300px;padding:25px}.hero h1{font-size:32px}.cards{grid-template-columns:1fr;padding:25px}.footer,.page-footer{height:85px}}
